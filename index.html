@@ -438,15 +438,15 @@
 			</div>
 			<div class="col-lg-7 mt-lg-0 mt-5 contact-right">
 				<h4 class="mb-4">Get In Touch</h4>
-				<form action="#" method="post">
-					<label><i class="fa mr-2 fa-user" aria-hidden="true"></i> Name</label>
-					<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+				<form action="#" method="post" name="form">
+					<label><i class="fa mr-2 fa-user" aria-hidden="true" ></i> Name</label>
+					<input type="text" name="Name" placeholder="Name" onfocus="if(this.placeholder=='Name') this.placeholder='';" onblur="if(this.placeholder=='') this.placeholder='Name';" required>
 					<div class="clearfix"></div>
 					<label><i class="fas mr-2 fa-envelope-open" aria-hidden="true"></i>Email</label>
-					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input type="email" name="Email" placeholder="Email" onfocus="if(this.placeholder=='Email') this.placeholder='';" onblur="if(this.placeholder=='') this.placeholder='Email';" required>
 					<div class="clearfix"></div>
 					<label><i class="fas mr-2 fa-phone" aria-hidden="true"></i>Phone</label>
-					<input type="text" name="Phone" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" required="">
+					<input type="text" name="Phone" placeholder="Should only contain numbers" onfocus="if(this.placeholder=='Phone') this.placeholder='';" onblur="if(this.placeholder=='') this.placeholder='Phone';" required pattern="[0-9]+">
 					<div class="clearfix"></div>
 					<label><i class="fas mr-2 fa-edit" aria-hidden="true"></i>Message</label>
 					<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
@@ -465,11 +465,10 @@
 			<div class="agile-grid-left agile-grid-right text-center">
 				<div class="social mb-4">
 					<ul>
-						<li><a href="#"><i class="fab mr-2 fa-facebook-f"></i></a></li>
-						<li><a href="#"><i class="fab mr-2 fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fab mr-2 fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fab mr-2 fa-pinterest"></i></a></li>
-						<li><a href="#"><i class="fab mr-2 fa-vk"></i></a></li>
+						<li><a href="www.linkedin.com/in/aditya-naresh"><i class="fab mr-2 fa-linkedin"></i></a></li>
+						<li><a href="https://www.instagram.com/aaaa_41414141/"><i class="fab mr-2 fa-instagram"></i></a></li>
+						<li><a href="https://discord.com/users/1093055080695070751"><i class="fab mr-2 fa-discord"></i></a></li>
+						<li><a href="https://vk.com/aditya_naresh"><i class="fab mr-2 fa-vk"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -540,6 +539,8 @@
 	</script>
 	<!-- //here ends scrolling icon -->
 	<!-- start-smoth-scrolling -->
+
+	<script src="js/validation.js"></script>
 
 </body>
 </html>
